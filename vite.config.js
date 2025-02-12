@@ -10,7 +10,6 @@ export default defineConfig({
         port: 5173,
         proxy: {
             "/api": {
-                // target: "http://134.122.17.151", // Ollama backend
                 target: "http://159.65.219.34:11434", // Ollama backend
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ""),

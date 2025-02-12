@@ -13,7 +13,7 @@ const OpenAITrainer = () => {
   const [loading, setLoading] = useState(false);
   const chatContainerRef = useRef(null);
 
-  const ollamaApiUrl = "api/v1/chat/completions";
+  const ollamaApiUrl = "/api/v1/chat/completions"; // <---- CHANGED HERE
 
   // Scroll to bottom on new messages
   useEffect(() => {
