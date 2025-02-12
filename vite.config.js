@@ -16,4 +16,7 @@ export default defineConfig({
         //         },
         //     },
     },
+    preview: {
+        allowedHosts: ["dev.aux-rolplay.com"],
+    },
 });
