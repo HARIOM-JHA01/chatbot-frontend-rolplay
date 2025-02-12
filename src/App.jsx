@@ -96,6 +96,7 @@ const OpenAITrainer = () => {
     ];
 
     try {
+      console.log("Api url: ", ollamaApiUrl);
       const response = await fetch(ollamaApiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
